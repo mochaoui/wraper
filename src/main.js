@@ -31,6 +31,8 @@ const modal = createAppKit({
   featuredWalletIds: [
     // Phantom
     'a797aa35c0fadbfc1a53e7f675162ed5226968b44a19ee3d24385c64d1d3c393',
+    // Trust Wallet
+    '4622a2b2d6af1c9844944291e5e7351a6aa24cd7b23099efac1b2fd875da31a0',
     // Solflare
     '1ca0bdd4747578705b1939af023d120677c64fe11e7da5edcf4ecab371b2c723',
   ],

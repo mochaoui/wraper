@@ -125,7 +125,8 @@ const domObserver = new MutationObserver(() => {
     for (const el of path) {
       if (!el.tagName) continue;
       const tag = el.tagName.toLowerCase();
-      if (tag === 'wui-list-wallet' || tag.includes('wallet')) {
+      // Only catch individual wallet items, NOT the "All Wallets" button
+      if (tag === 'wui-list-wallet') {
         const name = el.getAttribute?.('name') ||
                      el.getAttribute?.('walletid') ||
                      el.textContent?.trim()?.split('\n')?.[0]?.trim() || '';
